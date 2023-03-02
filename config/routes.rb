@@ -4,9 +4,5 @@ Rails.application.routes.draw do
 #  resources :items, only: :index
 root 'items#index'
 
-# devise_scope :users do
-#   get '/users', to: redirect("/users/sign_up")
-# end
-
 
 end
