@@ -21,7 +21,4 @@ class PurchaseRecordAddress
     Address.create(post_code: post_code, prefecture_id: prefecture_id, municipality: municipality, address: address, building_name: building_name, tel_number: tel_number,purchase_record_id: purchase_record.id)
   end
 
-  # extend ActiveHash::Associations::ActiveRecordExtensions
-  # belongs_to :prefecture
-
 end
