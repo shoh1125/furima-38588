@@ -25,7 +25,7 @@ RSpec.describe PurchaseRecordAddress, type: :model do
         expect(@purchase_record_address.errors.full_messages).to include("Post code can't be blank")
       end
       it 'post_codeが半角のハイフンを含んだ正しい形式でないと保存できないこと' do
-        @purchase_record_address.post_code = '123-456７'
+        @purchase_record_address.post_code = '123456７'
         @purchase_record_address.valid?
         expect(@purchase_record_address.errors.full_messages).to include("Post code input collectly")
       end
